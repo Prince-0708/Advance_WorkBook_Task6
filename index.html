@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Marketplace Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🔒 Secure P2P Marketplace</h1>
+
+    <!-- User Login Section -->
+    <div id="login-section">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Marketplace Actions (Visible After Login) -->
+    <div id="marketplace-section" style="display: none;">
+        <h2>Welcome, <span id="userRole"></span></h2>
+        <button id="addBtn" onclick="addListing()">Add Listing (Sellers & Admins Only)</button>
+        <button id="deleteBtn" onclick="deleteListing()">Delete Listing (Admins Only)</button>
+
+        <!-- Listings Table -->
+        <h3>Listings</h3>
+        <table id="listingsTable">
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
